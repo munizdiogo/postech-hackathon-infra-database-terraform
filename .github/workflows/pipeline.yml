@@ -47,4 +47,4 @@ jobs:
 
             - name: Run SQL script
               run: |
-                  mysql -u ${{ secrets.RDS_DATABASE_USER }} -p${{ secrets.RDS_DATABASE_PASSWORD }} -P 3306 -h dbpostech.cd6yk7z7kstc.${{ env.AWS_DEFAULT_REGION }}.rds.amazonaws.com < scripts/init.sql
+                  mysql -u ${{ secrets.RDS_DATABASE_USER }} -p${{ secrets.RDS_DATABASE_PASSWORD }} -P 3306 -h dbhacka.cd6yk7z7kstc.${{ env.AWS_DEFAULT_REGION }}.rds.amazonaws.com < scripts/init.sql 
