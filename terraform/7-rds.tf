@@ -1,6 +1,6 @@
 resource "aws_instance" "webserver" {
   ami = "ami-047a51fa27710816e"
-  instance_type = "t2.micro"
+  instance_type = "t3.micro"
   subnet_id = aws_subnet.public_subnet_a.id
 }
 
@@ -9,7 +9,7 @@ resource "aws_db_instance" "banco_de_dados" {
   allocated_storage = 10
   engine = "mysql"
   engine_version = "8.0.28"
-  instance_class = "db.t2.micro"
+  instance_class = "db.t3.micro"
   username = "admin"
   password = "PostechHacka123"
   skip_final_snapshot = true
